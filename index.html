@@ -268,53 +268,6 @@
       </defs>
     </svg>
 
-    <div class="backdrop is-open">
-      <div class="modal">
-        <div class="row"><button class="close-btn" id="close">x</button></div>
-        <h2 class="form-header">
-          Leave your contacts and we will call you back
-        </h2>
-        <form class="form">
-          <div class="form-flex">
-            <label class="form-label icon-flex" for="name">Name</label>
-            <input type="text" class="form-input" name="name" id="name" />
-          </div>
-          <div class="form-flex">
-            <label class="form-label" for="phone">Phone</label>
-            <input type="tel" class="form-input" name="phone" id="phone" />
-          </div>
-          <div class="form-flex">
-            <label class="form-label" for="email">Email</label>
-            <input type="email" class="form-input" name="email" id="email" />
-          </div>
-          <div class="form-flex">
-            <label class="form-label" for="comment">Comment</label>
-            <textarea
-              class="form-textarea"
-              name="textinput"
-              placeholder="Text input"
-              id="comment"
-            >
-            </textarea>
-          </div>
-          <label class="form-acceptance">
-            <input
-              class="acceptance"
-              type="checkbox"
-              name="acceptance"
-              value="acceptance"
-              required
-            />
-            I accept the terms and conditions of the
-            <a class="privacy-policy" href="">Privacy Policy</a>
-          </label>
-          <div class="send-btn">
-            <button class="send" type="”submit”">Send</button>
-          </div>
-        </form>
-      </div>
-    </div>
-
     <header class="top-line">
       <div class="top-line-container container">
         <nav class="navigation">
@@ -327,37 +280,6 @@
             </li>
             <li><a class="nav-link" href="">Portfolio</a></li>
             <li><a class="nav-link" href="">Contacts</a></li>
-
-            <!-- <div class="backdrop is-open">
-              <div class="modal">
-                <div class="row"><button id="close">X</button></div>
-                <h2>Leave your contacts and we will call you back</h2>
-                <form>
-                  <label class="form-label"
-                    >Name
-                    <input type="”text”" class="”form-input”" name="”name”" />
-                  </label>
-                  <label class="form-label"
-                    >Phone
-                    <input type="”tel”" class="”form-input”" name="”phone”" />
-                  </label>
-                  <label class="form-label"
-                    >Email
-                    <input type="”email”" class="”form-input”" name="”email”" />
-                  </label>
-                  <label class="form-label"
-                    >Comment
-                    <textarea
-                      class="””"
-                      name="”textinput”"
-                      placeholder="”Text"
-                      input”
-                    >
-                    </textarea>
-                  </label>
-                </form>
-              </div>
-            </div> -->
           </ul>
         </nav>
         <address class="contacts">
@@ -791,14 +713,15 @@
         <div class="subscribe-footer">
           <p class="subscribe">Subscribe</p>
           <form class="footer-email-btn">
-            <label class="label-subscribe" for="email"></label>
-            <input
-              class="input-email"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
-            />
+            <label class="label-subscribe" for="email">
+              <input
+                class="input-email"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+            </label>
             <button class="subscribe-btn" type="submit">
               <div class="btn-flex">
                 Subscribe
@@ -811,5 +734,52 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-open">
+      <div class="modal">
+        <div class="row"><button class="close-btn" id="close">x</button></div>
+        <h2 class="form-header">
+          Leave your contacts and we will call you back
+        </h2>
+        <form class="form">
+          <div class="form-flex">
+            <label class="form-label icon-flex" for="name">Name</label>
+            <input type="text" class="form-input" name="name" id="name" />
+          </div>
+          <div class="form-flex">
+            <label class="form-label" for="phone">Phone</label>
+            <input type="tel" class="form-input" name="phone" id="phone" />
+          </div>
+          <div class="form-flex">
+            <label class="form-label" for="email">Email</label>
+            <input type="email" class="form-input" name="email" id="email" />
+          </div>
+          <div class="form-flex">
+            <label class="form-label" for="comment">Comment</label>
+            <textarea
+              class="form-textarea"
+              name="textinput"
+              placeholder="Text input"
+              id="comment"
+            >
+            </textarea>
+          </div>
+          <label class="form-acceptance">
+            <input
+              class="acceptance"
+              type="checkbox"
+              name="acceptance"
+              value="acceptance"
+              required
+            />
+            I accept the terms and conditions of the
+            <a class="privacy-policy" href="">Privacy Policy</a>
+          </label>
+          <div class="send-btn">
+            <button class="send" type="”submit”">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
