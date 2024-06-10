@@ -243,8 +243,8 @@
         </symbol>
         <symbol id="icon-person-black-18dp-1" viewBox="0 0 32 32">
           <path
-            fill="#4d5ae5"
-            style="fill: var(--color1, #4d5ae5)"
+            fill="#2E2F42"
+            style="fill: var(--color1, #2e2f42)"
             d="M16 16c2.947 0 5.333-2.387 5.333-5.333s-2.387-5.333-5.333-5.333c-2.947 0-5.333 2.387-5.333 5.333s2.387 5.333 5.333 5.333zM16 18.667c-3.56 0-10.667 1.787-10.667 5.333v1.333c0 0.733 0.6 1.333 1.333 1.333h18.667c0.733 0 1.333-0.6 1.333-1.333v-1.333c0-3.547-7.107-5.333-10.667-5.333z"
           ></path>
         </symbol>
@@ -747,19 +747,29 @@
         </button>
         <p class="form-title">Leave your contacts and we will call you back</p>
         <form class="form">
-          <div class="form-flex">
-            <label class="form-label icon-flex" for="name">Name</label>
-            <input type="text" class="form-input" name="name" id="name" />
+          <div class="div-form">
+            <label class="form-label" for="user-name">Name</label>
+            <div class="div-input">
+              <input
+                type="text"
+                class="form-input"
+                name="user-name"
+                id="user-name"
+              />
+              <svg height="24" width="18" class="icon-person-black-18dp-1">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </div>
           </div>
-          <div class="form-flex">
+          <div class="div-form">
             <label class="form-label" for="phone">Phone</label>
             <input type="tel" class="form-input" name="phone" id="phone" />
           </div>
-          <div class="form-flex">
+          <div class="div-form">
             <label class="form-label" for="email">Email</label>
             <input type="email" class="form-input" name="email" id="email" />
           </div>
-          <div class="form-flex">
+          <div class="div-form">
             <label class="form-label" for="comment">Comment</label>
             <textarea
               class="form-textarea"
