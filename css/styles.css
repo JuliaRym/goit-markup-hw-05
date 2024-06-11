@@ -598,7 +598,6 @@ form input {
 .send-btn {
   display: block;
   min-width: 169px;
-  width: 169px;
   height: 56px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -628,6 +627,9 @@ form input {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-textarea:focus {
+  border-color: #4d5ae5;
+}
 .close-btn {
   display: flex;
   align-items: center;
@@ -649,11 +651,17 @@ form input {
 .close-btn:hover {
   background-color: #404bbf;
   border: none;
-  color: #ffffff;
 }
+.close-btn:hover .icon-close {
+  fill: #ffffff;
+}
+
 .close-btn:focus {
   background-color: #404bbf;
   border: none;
+}
+.close-btn:focus .icon-close {
+  fill: #ffffff;
 }
 .form-textarea::placeholder {
   color: rgba(46, 47, 66, 0.4);
@@ -678,20 +686,8 @@ form input {
   letter-spacing: 0.48px;
   text-decoration-line: underline;
 }
-/* .name {
-  position: relative;
-}
-.name:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 16px;
-  height: 18px;
-  width: 18px;
-  background: url (./images/icons.svg#icon-person-black-18dp-1);
-} */
-.icon-person-black-18dp-1 {
+
+.icon-modal {
   position: absolute;
   left: 16px;
   top: 50%;
@@ -702,20 +698,20 @@ form input {
 .icon-subscribe {
   margin-left: 16px;
 }
-/* .icon-close-black-18dp-2-1 {
-  fill: #2e2f42;
+.icon-close {
+  /* fill: #2e2f42; */
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+}
 .div-input {
   position: relative;
 }
 
-.icon-phone-black-18dp-1 {
+/* .icon-phone-black-18dp-1 {
   position: absolute;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  /* fill: #2e2f42; */
+  fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-email-black-18dp-1 {
@@ -723,9 +719,9 @@ form input {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  /* fill: #2e2f42; */
+  fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 .div-textarea {
   margin-bottom: 16px;
 }
@@ -750,4 +746,7 @@ form input {
   align-items: center;
   justify-content: center;
   fill: transparent;
+}
+.div-input:focus-within {
+  fill: #4d5ae5;
 }
