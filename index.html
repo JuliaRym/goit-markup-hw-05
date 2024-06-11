@@ -763,33 +763,46 @@
           </div>
           <div class="div-form">
             <label class="form-label" for="phone">Phone</label>
-            <input type="tel" class="form-input" name="phone" id="phone" />
+            <div class="div-input">
+              <input type="tel" class="form-input" name="phone" id="phone" />
+              <svg height="24" width="18" class="icon-phone-black-18dp-1">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </div>
           </div>
           <div class="div-form">
             <label class="form-label" for="email">Email</label>
-            <input type="email" class="form-input" name="email" id="email" />
+            <div class="div-input">
+              <input type="email" class="form-input" name="email" id="email" />
+              <svg height="24" width="18" class="icon-email-black-18dp-1">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
           </div>
-          <div class="div-form">
-            <label class="form-label" for="comment">Comment</label>
+          <div class="div-textarea">
+            <label class="form-label" for="user-comment">Comment</label>
             <textarea
               class="form-textarea"
-              name="textinput"
+              name="user-comment"
               placeholder="Text input"
-              id="comment"
+              id="user-comment"
             >
             </textarea>
           </div>
-          <label class="form-acceptance">
+          <div>
+            <!-- <label class="form-acceptance"> -->
             <input
-              class="acceptance"
+              class="user-privacy"
               type="checkbox"
-              name="acceptance"
-              value="acceptance"
+              name="user-privacy"
+              value="true"
+              id="user-privacy"
               required
             />
             I accept the terms and conditions of the
             <a class="privacy-policy" href="">Privacy Policy</a>
-          </label>
+            <!-- </label> -->
+          </div>
           <div class="send-btn">
             <button class="send" type="”submit”">Send</button>
           </div>
